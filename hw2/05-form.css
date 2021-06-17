@@ -1,0 +1,80 @@
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+input {
+  border: 1px solid var(--gray4);
+  font-size: 1.1rem;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  margin: 40px auto;
+  border: 1px solid var(--gray4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.form-element {
+  height: 30px;
+  margin-bottom: 2rem;
+}
+
+fieldset.form-element {
+  margin-bottom: 4em;
+}
+
+.input-label,
+legend {
+  font-weight: 600;
+}
+
+.input-element {
+  display: block;
+  width: 70%;
+  float: right;
+}
+
+.radios > input {
+  display: inline-block;
+  width: 10%;
+}
+
+.radios > label {
+  display: inline-block;
+  width: 85%;
+}
+
+.btn {
+  width: 49%;
+  height: 40px;
+  border-radius: 3px;
+  padding: 0.5rem;
+  border: 1px solid var(--green);
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--black);
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 165, 0, 0.1);
+}

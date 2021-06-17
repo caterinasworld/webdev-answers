@@ -1,0 +1,24 @@
+:root {
+  --lightorange: rgba(255, 165, 0, 0.1);
+}
+
+.table-heading,
+.table-cell {
+  width: 200px;
+  padding: 1rem;
+  border: 1px solid var(--black);
+}
+
+.table-heading {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.channel {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.table-row:hover {
+  background-color: var(--lightorange);
+}
