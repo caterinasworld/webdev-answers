@@ -9,7 +9,7 @@ const isPrime = (num) => {
 
 const getPrimes = (len) => {
   for (let i = 2; i <= len; i++) {
-    let prime = isPrime(i);
+    const prime = isPrime(i);
 
     if (prime) console.log(i);
   }

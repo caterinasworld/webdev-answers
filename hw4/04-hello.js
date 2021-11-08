@@ -14,15 +14,26 @@ const createDOM = () => {
   section.style.margin = '100px auto';
   section.style.textAlign = 'center';
 
-  let p = document.createElement('p');
-  p.innerHTML = `<span style="font-size1.6rem; font-weight: bold"> Hi! My name is Spongebob and this is my introduction. </span> I work as a fry
-cook and I would like to get my drivers license in the near future. In
-my free time, I enjoy hanging out with my best friend Patrick.`;
-  p.style.fontSize = '1.4rem';
-  p.style.lineHeight = '1.8rem';
+  let bio = document.createElement('div');
+  bio.style.marginTop = '2rem';
+  bio.style.fontSize = '1.4rem';
+  bio.style.lineHeight = '1.8rem';
+
+  let name = document.createElement('span');
+  name.textContent = `Hi! My name is Spongebob and this is my introduction. `;
+  name.style.fontSize = '1.6rem';
+  name.style.fontWeight = 'bold';
+
+  let intro = document.createElement('span');
+  intro.textContent = `I work as a fry
+  cook and I would like to get my drivers license in the near future. In
+  my free time, I enjoy hanging out with my best friend Patrick.`;
+
+  bio.append(name);
+  bio.append(intro);
 
   section.append(img);
-  section.append(p);
+  section.append(bio);
   main.append(section);
 };
 
