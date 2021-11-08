@@ -9,13 +9,16 @@ app.style.marginTop = '2rem';
 
 const addElementToDOM = (element) => {
   let drink = document.createElement('figure');
+  drink.setAttribute('class', 'figure');
 
   let img = document.createElement('img');
   img.style.width = '100%';
   img.setAttribute('src', `${element.strDrinkThumb}`);
-  img.setAttribute('alt', `${element.strDrink}`);
+  img.setAttribute('alt', `image of the ${element.strDrink} drink`);
 
   let caption = document.createElement('figcaption');
+  caption.setAttribute('class', 'figcaption');
+
   let heading = document.createElement('h4');
   heading.textContent = `${element.strDrink}`;
 

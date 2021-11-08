@@ -12,6 +12,7 @@ $(document).ready(function () {
       })
       .append(
         $('<figure>')
+          .addClass('figure')
           .css({
             display: 'flex',
             flexDirection: 'column',
@@ -23,10 +24,14 @@ $(document).ready(function () {
               .css('width', '100%')
               .attr({
                 src: `${element.strDrinkThumb}`,
-                alt: `${element.strDrink}`,
+                alt: `image of the ${element.strDrink} drink`,
               })
           )
-          .append($('<figcaption>').append($('<h4>').text(element.strDrink)))
+          .append(
+            $('<figcaption>')
+              .addClass('figcaption')
+              .append($('<h4>').text(element.strDrink))
+          )
       );
   };
 
