@@ -149,6 +149,9 @@ h1 {
   height: 100px;
   border: 1px solid var(--white);
   padding: 10px;
+}
+
+.bootstrap-grid .row:nth-child(1) > * {
   background-color: var(--purple);
 }
 
@@ -165,10 +168,6 @@ h1 {
 }
 
 /* Code for exercise 06-bootstrap-form */
-
-form {
-  width: 400px;
-}
 
 .btn {
   display: inline-block;
