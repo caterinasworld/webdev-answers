@@ -29,6 +29,7 @@ const addElementToDOM = (element) => {
   app.appendChild(drink);
 };
 
+// fetchData with promise
 const fetchData = (url) => {
   fetch(url)
     .then((response) => response.json())
@@ -55,4 +56,26 @@ const fetchData = (url) => {
     });
 };
 
+// fetchData with async/await
+const fetchDataAsyncAwait = async (url) => {
+  try {
+    let response = await fetch(url);
+    let data = await response.json();
+
+    data.drinks.forEach((item) => {
+      addElementToDOM(item);
+    });
+  } catch (error) {
+    console.error(error);
+
+    let element = document.createElement('div');
+    element.textContent = `An error occured. Please try again.`;
+    element.style.marginBottom = '2rem';
+    app.append(element);
+  } finally {
+    app.removeChild(loading);
+  }
+};
+
 fetchData(url);
+// fetchDataAsyncAwait(url);
