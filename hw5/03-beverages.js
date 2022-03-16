@@ -49,9 +49,9 @@ $(document).ready(function () {
       error: (error) => {
         console.log(error);
         $('#results')
-          .append('<div')
+          .append('<div>')
           .css('marginBottom', '2rem')
-          .text(`An error occured. Please try again.`);
+          .text(`An error occurred. Please try again.`);
       },
       complete: () => {
         $('#loading').remove();
