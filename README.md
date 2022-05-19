@@ -1,1 +1,3 @@
-## Intro to Web Development - Homework Answers
+## Intro to Web Development
+
+Caterina's solutions to the homework exercises.
