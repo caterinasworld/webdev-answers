@@ -3,18 +3,12 @@
   margin: 60px auto;
 }
 
-.image {
+.img {
   display: block;
   margin: 0 auto;
   border-radius: 100px;
-  text-align: center;
 }
 
-.description {
-  font-size: 1.2rem;
-}
-
-.description::first-line {
-  font-size: 1.5rem;
+.bio::first-line {
   font-weight: bold;
 }
