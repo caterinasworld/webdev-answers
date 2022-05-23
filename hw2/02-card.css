@@ -25,7 +25,7 @@
 }
 
 .btn:hover {
+  border: 1px solid var(--navy);
   background-color: var(--orange);
   color: var(--navy);
-  border: 1px solid var(--navy);
 }
