@@ -5,13 +5,13 @@ body {
 .nav-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .list-item {
   display: inline-block;
   width: 160px;
   margin: 0 -3px;
+  list-style-type: none;
   background-color: var(--green);
 }
 
@@ -20,9 +20,7 @@ body {
   width: 100%;
   padding: 2rem 1.5rem;
   text-decoration: none;
-  text-align: center;
   color: var(--white);
-  font-size: 1.2rem;
 }
 
 .nav-link:hover {
