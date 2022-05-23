@@ -5,8 +5,8 @@
 .table-heading,
 .table-cell {
   width: 200px;
-  padding: 1rem;
   border: 1px solid var(--black);
+  padding: 1rem;
 }
 
 .table-heading {
