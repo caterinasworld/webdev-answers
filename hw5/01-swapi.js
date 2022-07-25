@@ -175,14 +175,6 @@ const filterStarships = (input) => {
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
 
-  // const houses = characters.reduce((total, item) => {
-  //   total.hasOwnProperty(item.house)
-  //     ? total[item.house]++
-  //     : (total[item.house] = 1);
-
-  //   return total;
-  // }, {});
-
   const result = input.reduce((acc, curr) => {
     // Return the cost to purchase all starships in the input array
 
@@ -193,7 +185,7 @@ const reduceStarships = (input) => {
     return acc;
   }, 0);
 
-  return `The cost of all starchips is ${result.toLocaleString()} credits`;
+  return `The cost of all starships is ${result.toLocaleString()} credits`;
 };
 
 console.log(mapStarships(starships));
