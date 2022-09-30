@@ -1,3 +1,3 @@
-## Intro to Web Development
+## Intro to Web Development - Solutions Repository
 
-Caterina's solutions to the homework exercises.
+Potential solutions to the homework exercises.
