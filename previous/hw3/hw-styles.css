@@ -1,0 +1,175 @@
+h1 {
+  text-align: center;
+}
+
+/* Code for exercise 01-flex */
+
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.flex-container-1 > .item4 {
+  order: -1;
+}
+
+.flex-container-1 > .item7 {
+  order: -2;
+}
+
+/* Code for exercise 02-flex */
+
+.flex-container-2 {
+  display: flex;
+  height: 400px;
+  flex-flow: column-reverse wrap;
+  align-content: space-evenly;
+}
+
+/* Code for exercise 03-grid */
+
+.grid-container-1 {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.grid-container-1 > .item2 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.grid-container-1 > .item4,
+.grid-container-1 > .item5 {
+  grid-row: span 3;
+}
+
+.grid-container-1 > .item7 {
+  order: -1;
+  grid-column: 1 / 5;
+  grid-row: span 2;
+}
+
+.grid-container-1 > .item6,
+.grid-container-1 > .item8 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Code for exercise 04-grid */
+
+.grid-container-2 > .item1 {
+  grid-area: header;
+}
+
+.grid-container-2 > .item2 {
+  grid-area: jumbotron;
+}
+
+.grid-container-2 > .item3 {
+  grid-area: card1;
+}
+
+.grid-container-2 > .item4 {
+  grid-area: card2;
+}
+
+.grid-container-2 > .item5 {
+  grid-area: card3;
+}
+
+.grid-container-2 > .item6 {
+  grid-area: section;
+}
+
+.grid-container-2 > .item7 {
+  grid-area: footer;
+}
+
+.grid-container-2 {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    'header'
+    'jumbotron'
+    'jumbotron'
+    'section'
+    'section'
+    'card1'
+    'card2'
+    'footer';
+}
+
+@media (max-width: 1024px) {
+  .grid-container-2 > .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'header       header'
+      'jumbotron    jumbotron'
+      'jumbotron    jumbotron'
+      'section      section'
+      'section      section'
+      'card1        card2'
+      'card1        card2'
+      'footer       footer';
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'header       header      header'
+      'jumbotron    jumbotron   jumbotron'
+      'jumbotron    jumbotron   jumbotron'
+      'card1        card2       card3'
+      'card1        card2       card3'
+      'section      section     section'
+      'section      section     section'
+      'section      section     section'
+      'footer       footer      footer';
+  }
+}
+
+/* Code for exercise 05-bootstrap-grid */
+
+.bootstrap-grid .row > * {
+  height: 100px;
+  border: 1px solid var(--white);
+  padding: 10px;
+}
+
+.bootstrap-grid .row:nth-child(1) > * {
+  background-color: var(--purple);
+}
+
+.bootstrap-grid .row:nth-child(2) > * {
+  background-color: var(--navy);
+}
+
+.bootstrap-grid .row:nth-child(3) > * {
+  background-color: var(--teal);
+}
+
+.bootstrap-grid .row:nth-child(4) > * {
+  background-color: var(--green);
+}
+
+/* Code for exercise 06-bootstrap-form */
+
+.btn {
+  display: inline-block;
+  width: 49%;
+}
