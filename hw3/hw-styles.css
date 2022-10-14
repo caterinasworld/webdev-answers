@@ -1,94 +1,86 @@
+body {
+  margin: 0;
+  background: rgb(246,219,231);
+  background: radial-gradient(circle, rgba(246,219,231,1) 0%, rgba(194,214,238,1) 100%);
+}
+
 h1 {
   text-align: center;
 }
 
 /* Code for exercise 01-flex */
 
-.flex-container-1 {
+.navbar {
   display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end;
+  justify-content: end;
+  margin: 0;
+  padding-left: 0;  
+  background-color: var(--purple);
+  list-style-type: none;
+  transition: top 500ms ease-in-out;
 }
 
-.flex-container-1 > .item4 {
-  order: -1;
+.navbar:focus-within {
+  top: 0;
 }
 
-.flex-container-1 > .item7 {
-  order: -2;
+.nav-item {
+  display: inline-block;
 }
 
-/* Code for exercise 02-flex */
-
-.flex-container-2 {
-  display: flex;
-  height: 400px;
-  flex-flow: column-reverse wrap;
-  align-content: space-evenly;
+.nav-link {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: var(--white);
 }
 
-/* Code for exercise 03-grid */
-
-.grid-container-1 {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+.nav-item:hover {
+  background-color: var(--green);
 }
 
-.grid-container-1 > .item2 {
-  grid-column: span 2;
-  grid-row: span 4;
+.nav-item:active {
+  background-color: var(--orange);
+  color: black;
 }
 
-.grid-container-1 > .item4,
-.grid-container-1 > .item5 {
-  grid-row: span 3;
+.nav-item:focus {
+  border: 3px solid var(--orange);
 }
 
-.grid-container-1 > .item7 {
-  order: -1;
-  grid-column: 1 / 5;
-  grid-row: span 2;
-}
+/* Code for exercise 02-grid */
 
-.grid-container-1 > .item6,
-.grid-container-1 > .item8 {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-/* Code for exercise 04-grid */
-
-.grid-container-2 > .item1 {
+.grid-areas-container > .item1 {
   grid-area: header;
 }
 
-.grid-container-2 > .item2 {
+.grid-areas-container > .item2 {
   grid-area: jumbotron;
 }
 
-.grid-container-2 > .item3 {
+.grid-areas-container > .item3 {
   grid-area: card1;
 }
 
-.grid-container-2 > .item4 {
+.grid-areas-container > .item4 {
   grid-area: card2;
 }
 
-.grid-container-2 > .item5 {
+.grid-areas-container > .item5 {
   grid-area: card3;
+  display: none;
 }
 
-.grid-container-2 > .item6 {
+.grid-areas-container > .item6 {
   grid-area: section;
 }
 
-.grid-container-2 > .item7 {
+.grid-areas-container > .item7 {
   grid-area: footer;
 }
 
-.grid-container-2 {
+.grid-areas-container {
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr;
@@ -104,14 +96,8 @@ h1 {
     'footer';
 }
 
-@media (max-width: 1024px) {
-  .grid-container-2 > .item5 {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .grid-container-2 {
+  .grid-areas-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -127,7 +113,7 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-  .grid-container-2 {
+  .grid-areas-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -141,35 +127,8 @@ h1 {
       'section      section     section'
       'footer       footer      footer';
   }
-}
 
-/* Code for exercise 05-bootstrap-grid */
-
-.bootstrap-grid .row > * {
-  height: 100px;
-  border: 1px solid var(--white);
-  padding: 10px;
-}
-
-.bootstrap-grid .row:nth-child(1) > * {
-  background-color: var(--purple);
-}
-
-.bootstrap-grid .row:nth-child(2) > * {
-  background-color: var(--navy);
-}
-
-.bootstrap-grid .row:nth-child(3) > * {
-  background-color: var(--teal);
-}
-
-.bootstrap-grid .row:nth-child(4) > * {
-  background-color: var(--green);
-}
-
-/* Code for exercise 06-bootstrap-form */
-
-.btn {
-  display: inline-block;
-  width: 49%;
+  .grid-areas-container > .item5 {
+    display: block;
+  }
 }
