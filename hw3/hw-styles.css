@@ -26,6 +26,7 @@ h1 {
 
 .nav-item {
   display: inline-block;
+  border: 3px solid var(--purple);
 }
 
 .nav-link {
@@ -37,12 +38,13 @@ h1 {
 }
 
 .nav-item:hover {
+  border: 3px solid var(--green);
   background-color: var(--green);
 }
 
 .nav-item:active {
+  border: 3px solid var(--orange);
   background-color: var(--orange);
-  color: black;
 }
 
 .nav-item:focus {
