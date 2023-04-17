@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+}
+
+/* Code for exercise 01-navbar */
+
+.navbar {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: var(--black);
+  list-style-type: none;
+  transition: top 500ms ease-in-out;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav-link:hover {
+  background-color: var(--violetred);
+}
+
+.heading1 {
+  margin-top: 100px;
+}
+
+/* Code for exercise 02-cards */
+
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid var(--black);
+  padding: 20px;
+  margin: 10px;
+}
+
+.img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+button.btn {
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+button.btn:hover {
+  background-color: var(--violetred);
+}
+
+/* Code for exercise 03-table */
+
+.table {
+  margin: 0 auto;
+}
+
+.table-heading,
+.table-cell {
+  width: 20vw;
+  border: 1px solid var(--black);
+  padding: 1rem;
+}
+
+.table-heading {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.channel {
+  background-color: var(--violetred);
+}
+
+.table-row:hover {
+  background-color: var(--orange);
+}
+
+/* Code for exercise 04-form */
+
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.form {
+  margin: 40px auto;
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  color: var(--gray);
+}
+
+.form-element {
+  margin-bottom: 1.2rem;
+}
+
+.input-label {
+  font-weight: 600;
+}
+
+.input-element {
+  display: block;
+  width: 60%;
+  height: 24px;
+  float: right;
+  border: 1px solid var(--black);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.btn {
+  width: 49%;
+  border: 1px solid var(--black);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--violetred);
+  background-color: var(--violetred);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(120, 118, 118, 0.2);
+}

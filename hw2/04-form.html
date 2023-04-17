@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>04 - Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Exercise 04 - Form</h1>
+      <form class="form" action="/submit">
+        <!-- Add your code here -->
+        <h2 class="form-title">Sign Up Form</h2>
+        <p>Fill up the items in the form below.</p>
+        <div class="form-element">
+          <label class="input-label" for="name">Name:</label>
+          <input class="input-element" type="text" id="name" name="name" />
+        </div>
+        <div class="form-element">
+          <label class="input-label" for="username">Username:</label>
+          <input
+            class="input-element"
+            type="text"
+            id="username"
+            name="username" />
+        </div>
+        <div class="form-element">
+          <label class="input-label" for="email">Email:</label>
+          <input class="input-element" type="email" id="email" name="email" />
+        </div>
+        <div class="form-element">
+          <label class="input-label" for="password">Email:</label>
+          <input
+            class="input-element"
+            type="password"
+            id="password"
+            name="password" />
+        </div>
+        <div class="form-element">
+          <label class="input-label" for="date">Date of birth:</label>
+          <input class="input-element" type="date" id="date" name="date" />
+        </div>
+        <fieldset class="form-element">
+          <legend class="input-label">Preferred Pronouns</legend>
+          <div>
+            <input type="radio" name="pronouns" id="option1" />
+            <label for="option1">She/her</label>
+          </div>
+          <div>
+            <input type="radio" name="pronouns" id="option2" />
+            <label for="option2">He/him</label>
+          </div>
+          <div>
+            <input type="radio" name="pronouns" id="option3" />
+            <label for="option3">They/them</label>
+          </div>
+          <div>
+            <input type="radio" name="pronouns" id="option4" />
+            <label for="option4">I prefer not to say</label>
+          </div>
+        </fieldset>
+        <div class="form-element">
+          <input class="btn btn-primary" type="submit" value="Submit" />
+          <input class="btn btn-secondary" type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
